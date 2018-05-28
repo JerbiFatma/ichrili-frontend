@@ -1,0 +1,13 @@
+.product_photo{
+    padding:20px;
+    width: 500px;
+    height: 200px;
+}
+
+#myCarousel{
+    height: 460px !important;
+}
+.mylist{
+    padding-top:30px;
+    margin-top:30px;
+}

@@ -1,0 +1,21 @@
+<div class="row">
+    <form role="form" #form="ngForm">
+      <legend>market Details</legend>
+      <div class="form-group">
+        <label for="">Market:</label>
+        <input type="text" class="form-control" id="market_name" name="market_name" [(ngModel)]="currentMarket.market_name" placeholder="market_name"
+          (input)="onChangeMarket_Name()">
+  
+        <label for="">Adresse:</label>
+        <input type="text" class="form-control" id="Adresse" name="Adresse" [(ngModel)]="currentMarket.Adresse" placeholder="Adresse">
+        <label for="">ville:</label>
+        <input type="text" class="form-control" id="ville" name="ville" [(ngModel)]="currentMarket.ville" placeholder="ville">
+      
+    
+    </div>
+  
+      <button type="submit" class="btn btn-primary" (click)="addOrEdit(context,currentMarket)">{{Btn_SaveAdd_label}}</button>
+  
+    </form>
+  </div>
+  

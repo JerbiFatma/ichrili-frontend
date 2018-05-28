@@ -1,0 +1,49 @@
+<app-jumbutron></app-jumbutron>
+<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+  <div class="row">
+   
+
+   <img class="avatar" [src]="_avatar_url" />
+    <span class="text-primary"><b>Welcome: </b></span><span> {{_user.user_name}}</span><br>
+
+
+  </div>
+  <div class="row">
+    <app-sending-invitation></app-sending-invitation>
+  </div>
+</div>
+<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+
+  <!--<app-productlist></app-productlist>-->
+</div>
+<div class="col-sm-3 ">
+  <h3> Products</h3>
+  <ul class="list-group">
+    <li  *ngFor="let produit of products" class="list-group-item list-group-item-success">{{produit.designation}}</li>
+     
+  </ul>
+</div>
+<div class="col-sm-3">
+  <h3>Super-Market</h3>
+  <ul class="list-group">
+      <li  *ngFor="let market of markets" class="list-group-item list-group-item-success">{{market.market_name}}</li>
+      
+  </ul>
+</div>
+<div class="col-sm-3">
+  <h3>Categorie Products</h3>
+  <ul class="list-group">
+      <li  *ngFor="let categorie of categories" class="list-group-item list-group-item-success">{{categorie.categorieP}}</li>
+    
+  </ul>
+</div>
+
+<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+
+</div>
+
+
+
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
+</div>
